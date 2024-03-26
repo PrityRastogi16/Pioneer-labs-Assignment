@@ -7,7 +7,7 @@ const {getDataFromApi} = require("../controllers/apidata.controller")
 userRouter.use(express.json());
 userRouter.use(cookieParser());
 userRouter.post("/user/register", registerUser);
-userRouter.put("/user/reset/:id", resetPassword);
+userRouter.put("/user/reset/:id",auth, resetPassword);
 userRouter.post("/user/login", loginUser);
 userRouter.get("/user/",auth, getUser)
 // userRouter.use(cookieParser());

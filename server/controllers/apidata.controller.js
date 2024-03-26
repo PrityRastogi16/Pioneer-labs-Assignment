@@ -16,7 +16,7 @@ const getDataFromApi =  async(req,res)=>{
        }
     //    Pagination
     const page = parseInt(req.query.page)||1;
-    const pageSize = parseInt(req.query.pageSize)||1;
+    const pageSize = parseInt(req.query.pageSize)||10;
     const startIdx = (page-1)*pageSize;
     const endIdx = startIdx+pageSize;
 
