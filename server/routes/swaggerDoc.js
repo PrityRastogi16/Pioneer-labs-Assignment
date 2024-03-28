@@ -187,6 +187,8 @@
  * /user:
  *   get:
  *     summary: Get all users
+ *     security:
+ *       - cookieAuth: []
  *     responses:
  *       '200':
  *         description: List of users
