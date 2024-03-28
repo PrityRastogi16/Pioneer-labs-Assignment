@@ -176,7 +176,7 @@
  *   delete:
  *     summary: Log out user
  *     security:
- *       - cookieAuth: []
+ *       - bearerAuth: []
  *     responses:
  *       '200':
  *         description: User logged out successfully
@@ -188,7 +188,7 @@
  *   get:
  *     summary: Get all users
  *     security:
- *       - cookieAuth: []
+ *       - bearerAuth: []
  *     responses:
  *       '200':
  *         description: List of users
