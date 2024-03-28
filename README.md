@@ -1,27 +1,33 @@
-# User Management and Public API Data Retrieval API
+# 🚀 User Management and Public API Data Retrieval API
 
-This project provides an API for managing user authentication, registration, password reset, and fetching data from a public API with filtering and pagination.
+Welcome to the User Management and Public API Data Retrieval API documentation. This API provides endpoints for user authentication, registration, password reset, and fetching data from a public API with filtering and pagination.
 
-## Project Structure
+## Project Overview
 
-The project consists of the following components:
+This project is structured to provide seamless user management functionalities along with the ability to retrieve data from a public API. Below are the key components of the project:
 
-- `userRouter.js`: Contains routes for user management operations.
-- `user.controller.js`: Implements user-related functionalities such as registration, login, password reset, and logout.
+- `userRouter.js`: Manages routes for user-related operations.
+- `user.controller.js`: Implements user functionalities such as registration, login, password reset, and logout.
 - `auth.middleware.js`: Middleware for user authentication.
 - `apidata.controller.js`: Controller for fetching data from a public API with filtering and pagination.
-- `README.md`: Documentation file for the project.
+- `README.md`: Comprehensive documentation file for the project.
+
+  ## Deployment and Swagger Documentation
+
+- [Backend Deployment Link](https://pioneer-labs-assignment-p2oz.onrender.com) - Visit this link to access the deployed API.
+- [Swagger Documentation Link](https://pioneer-labs-assignment-p2oz.onrender.com/swagger) - View the Swagger documentation for detailed API specifications.
+
 
 ## Getting Started
 
-To run the project locally, follow these steps:
+To run the project locally, follow these simple steps:
 
 1. Clone this repository to your local machine.
-2. Install dependencies using `npm install`.
+2. Install project dependencies using `npm install`.
 3. Set up environment variables, including the secret key for JWT and any necessary configurations for connecting to MongoDB.
-4. Start the server using `npm start`.
+4. Start the server by running `npm start`.
 
-## Endpoints
+## API Endpoints
 
 ### User Management
 
@@ -33,13 +39,15 @@ To run the project locally, follow these steps:
 
 ### Public API Data
 
-- `GET /api`: Get data from a public API with filtering and pagination.
+- `GET /api`: Retrieve data from a public API with filtering and pagination.
 
-## Pagination
+## Pagination Support
 
 The `/api` endpoint supports pagination. You can specify the page number and page size as query parameters.
 
 ## Technologies Used
+
+This API is built using the following technologies:
 
 - Node.js
 - Express.js
@@ -47,3 +55,5 @@ The `/api` endpoint supports pagination. You can specify the page number and pag
 - bcrypt
 - JSON Web Tokens (JWT)
 - Axios
+
+Feel free to explore the API and leverage its functionalities for your applications! If you have any questions or feedback, don't hesitate to reach out.
